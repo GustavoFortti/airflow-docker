@@ -36,7 +36,6 @@ RUN pip install wtforms[compat]==2.3.3
 # Exporte a porta 8080 para que o Airflow possa ser acessado externamente
 EXPOSE 8080
 
-RUN echo "FLAG"
 # Defina o comando padrão a ser executado quando o contêiner for iniciado
 # CMD ["airflow", "webserver"]
 COPY ./config/entrypoint.sh /root/
